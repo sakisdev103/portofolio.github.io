@@ -160,7 +160,7 @@ window.addEventListener("DOMContentLoaded", function () {
         <div class="project-card">
             <h5>${item.name}</h5>
             <img src="${item.img}" alt="">
-            <p>${item.description}</p>
+//             <p>${item.description}</p>
             <a href="${item.link}">View Project</a>
         </div>
       `
