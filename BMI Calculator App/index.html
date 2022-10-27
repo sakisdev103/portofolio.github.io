@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <section class="main-container">
+        <div class="color-adjust">
+            <button class="theme-button" id="theme-dark" onclick="changeColorDark()"><img src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/30/000000/external-moon-web-smashingstocks-glyph-smashing-stocks.png"/></button>
+            <button class="theme-button" style="display: none;" id="theme-light" onclick="changeColorLight()"><img src="https://img.icons8.com/ios-glyphs/30/000000/sun--v1.png"/></button>
+        </div>
+        <h1 class="main-header"><span class="bmi-theme">B</span class="bmi-theme">ody <span class="bmi-theme">M</span>ass <span class="bmi-theme">I</span>ndex <span class="bmi-theme">C</span>alculator</h1>
+        <div class="form">
+            <div class="form-result">
+                <p  id="formResult"></p>
+                <p id="formMessage"></p>
+            </div>
+            <input type="text" class="height" id="height" placeholder="HEIGHT" autocapitalize="">
+            <input type="text" class="weight" id="weight" placeholder="WEIGHT" autocomplete="">
+            <br>
+            <button class="submit-form" onclick="submitForm()">Submit</button>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

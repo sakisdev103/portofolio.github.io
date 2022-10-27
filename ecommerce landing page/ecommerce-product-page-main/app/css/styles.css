@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+:root{
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-graylish-blue: hsl(219, 9%, 45%);
+    --graylish-blue: hsl(220, 14%, 75%);
+    --light-graylish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+
+body{
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.nav-center{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 10%;
+}
+.nav-header{
+    margin-top: 1rem;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0 5%;
+}
+.links li{
+    padding: 0 5%;
+}
+.links a{
+    text-decoration: none;
+    color: grey;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40%;
+}
+.social-icons li{
+    list-style: none;
+}
+
+.cart-btn{
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.open-cart{
+    width: 20vw;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    padding: 0 2rem;
+    position: fixed;
+    right: 20%;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.open-cart-true {
+    visibility: visible;
+    z-index: 1;
+}
+
+.open-cart hr{
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.display-cart-items2{
+    display: flex;
+
+}
+
+.cart-img{
+    max-width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.cart-img img{
+    width: 100%;
+    border-radius: 1rem;
+    
+}
+
+.cart-content{
+    padding: 0 1rem;
+    color: grey;
+}
+
+.cart-price-calc{
+    display: flex;
+    margin-top: -2rem;
+}
+
+.cart-price-calc h5{
+    padding: 0 1rem;
+    margin-top: 1.1rem;
+    color: black;
+}
+
+.delete-item{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.delete-item img{
+    cursor: pointer;
+}
+
+.empty-cart{
+    width: 100%;
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+}
+
+.checkout{
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid var(--orange);
+    border-radius: 1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.cart-quantity{
+    color: var(--orange);
+    margin-top: -2rem;
+    margin-left: 1.5rem;
+}
+
+.checkout{
+    clear: both;
+}
+
+.avatar{
+    margin-left: 50%;
+    max-height: 100%;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.avatar img{
+    height: 3vh;
+}
+
+.main{
+    padding: 2rem 15rem;
+    display: grid;
+    grid-template-columns: 1.25fr 1.75fr; 
+}
+
+.product-description{
+    padding: 3rem 0;
+}
+
+.heading{
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.product-description h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+span{
+    display: block;
+}
+
+.product-description p{
+    color: grey;
+    max-width: 30rem;
+}
+
+.show-disc{
+    display: flex;
+}
+
+.product-description h4{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.discount{
+    display: flex;
+    align-items: center;
+    margin: 2rem 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--orange);
+    background-color: var(--pale-orange);
+}
+
+.product-description h5{
+    color: grey;
+    text-decoration: line-through;
+    margin-top: -1rem;
+}
+
+.cart-container{
+    display: flex;
+}
+
+.quantiny{
+    display: flex;
+    align-items: center;  
+    background-color: var(--light-graylish-blue);
+    padding: 0;
+    border-radius: 10px;
+}
+
+.quantiny img{
+    margin: 0 2rem;
+}
+
+#minus{
+    cursor: pointer;
+}
+
+#plus{
+    cursor: pointer;
+}
+
+.add-to-cart{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0 4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart img{
+    background-color: inherit;
+    max-width: 15%;
+    margin: 0 0.5rem;
+}
+
+
+@media (min-width: 1024px){
+
+    .modal-btn{
+        background-color: inherit;
+        border: 1px solid var(--white);
+        cursor: pointer;
+    }
+    
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0 , 0.5);
+        display: grid;
+        place-items: center;
+        visibility: hidden;
+        z-index: -10;
+    }
+    
+    
+    /* OPEN/CLOSE MODAL */
+    .open-modal {
+        visibility: visible;
+        z-index: 10;
+    }
+    
+    .modal-display{
+        position: fixed;
+        top: 5rem;
+    }
+    
+    .close-btn-container{
+        max-width: 94%;
+    }
+    
+    .close-btn{
+        background-color: var(--white);
+        border: 1px solid var(--white);
+        float: right;
+        /* margin: 1rem 0 ; */
+        cursor: pointer;
+    }
+    
+    .modal-container{
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    
+    .modal-container img{
+        height: 50vh;
+        border-radius: 1rem;
+    }
+    
+    .prev-btn{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5rem;
+        border: 1px solid var(--white);
+        padding-right: 0.5rem;
+        cursor: pointer;
+    }
+    
+    .prev-btn img{
+        height: 1rem;
+    }
+    
+    .next-btn{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5rem;
+        border: 1px solid var(--white);
+        padding-right: 0.5rem;
+        cursor: p;
+    }
+    
+    .next-btn img{
+        height: 1rem;
+    }
+    
+    .modal-sub-images{
+        max-width: 10vw;
+        display: flex;
+        align-items: center;
+        margin: 1rem 5rem;
+    }
+    
+    .modal-sub-images img{
+        width: 5rem;
+        margin: 1rem 0.5rem;
+        border-radius: 1rem;
+    }
+    
+    .active{
+        border: 1px solid var(--orange);
+    }
+    
+    .sub-images{
+        max-width: 28rem;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .sub-images img{
+        width: 50%;
+        border-radius: 15px;
+    }
+    
+    .thumbnail{
+        width: 28rem;
+        border-radius: 15px;
+    }
+}

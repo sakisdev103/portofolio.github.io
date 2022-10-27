@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <nav>
+    <div class="nav-center">
+      <div class="nav-header">
+        <img src="../images/logo.svg" class="logo" alt="logo" />
+        <!-- <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button> -->
+      </div>
+      <ul class="links">
+        <li>
+          <a href="#">Collections</a>
+        </li>
+        <li>
+          <a href="#">Men</a>
+        </li>
+        <li>
+          <a href="#">Women</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <ul class="social-icons">
+        <li>
+          <button class="cart-btn">
+            <img src="../images/icon-cart.svg" alt="">
+          </button>
+        </li>
+        <li>
+          <button class="avatar">
+            <img src="../images/image-avatar.png" alt="">
+          </button>
+        </li>
+      </ul>
+    </div>  
+    <div class="open-cart">
+      <h5>Cart</h5>
+      <hr>
+      <div class="display-cart-items">
+  
+    </div>
+  </nav>
+
+  <main class="main">
+    <div>
+      <button class="modal-btn">
+        <img src="../images/image-product-1.jpg" class="thumbnail" alt="">
+        <div class="sub-images">
+          <img src="../images/image-product-1-thumbnail.jpg" alt="">
+          <img src="../images/image-product-2-thumbnail.jpg" alt="">
+          <img src="../images/image-product-3-thumbnail.jpg" alt="">
+          <img src="../images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </button>
+      <div class="modal-overlay">
+        <div class="modal-display">
+          <div class="close-btn-container">
+            <button class="close-btn"><img src="../images/icon-close.svg" alt=""></button>
+          </div>
+            <div class="modal-container">
+              <button class="prev-btn"><img src="../images/icon-previous.svg" alt=""></button>
+              <img src="../images/image-product-1.jpg" id="modal-img" alt="">
+              <button class="next-btn"><img src="../images/icon-next.svg" alt=""></button>
+            </div>
+            <div class="modal-sub-images">
+              <img class="active" src="../images/image-product-1.jpg" alt="">
+              <img src="../images/image-product-2.jpg" alt="">
+              <img src="../images/image-product-3.jpg" alt="">
+              <img src="../images/image-product-4.jpg" alt="">
+            </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="product-description">
+      <label class="heading">sneaker company</label>
+      <h2>Fall Limited Edition <span>Sneakers</span></h2>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="show-disc">
+        <h4>$125.00</h4> <label class="discount">50%</label>
+      </div>
+      <h5>$250.00</h5>
+      <div class="cart-container">
+        <div class="quantiny">
+          <img src="../images/icon-minus.svg" id="minus" alt="">
+          <p id="display-quantity">0</p>
+          <img src="../images/icon-plus.svg" id="plus" alt="">
+        </div>
+        <button class="add-to-cart"><img src="../images/icon-cart.svg" alt=""> Add to cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
