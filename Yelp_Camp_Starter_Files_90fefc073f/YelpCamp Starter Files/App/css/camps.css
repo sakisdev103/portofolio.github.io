@@ -1,0 +1,156 @@
+body{
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar li{
+    margin: 0 2%;
+}
+
+.navbar ul:first-child{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul:first-child li:first-child{
+    margin-top: -5px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.mobile{
+    display: block;
+    float: right;
+    background-color: rgb(241, 241, 241);
+    padding: 0.5% 1%;
+    margin-right: 8%; margin-bottom: 20%;
+}
+
+.hide-content{
+    display: none;
+}
+
+.display-content{
+    display: block;
+}
+
+.map{
+    max-width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10%;
+    margin: 0 auto; margin-left: 13%;
+}
+
+.camp{
+    display: flex;
+    gap: 1rem;
+    max-width: 83%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.camp-info{
+    max-width: 60%;
+}
+
+.camp-info p{
+    color: grey;
+}
+
+.comments{
+    border: 1px solid grey;
+    border-radius: 5px;
+    max-width: 79%;
+    margin: 5% 0;
+    padding: 3% 5%;
+}
+
+.comments p{
+    color: grey;
+}
+
+.footer{
+    padding: 2% 8%;
+    max-width: 80%;
+    
+}
+
+
+@media (max-width:1024px){
+    #mobile{
+        list-style: none;
+        max-width: 60%;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        padding: 2% 5%; margin-bottom: 5%;
+        text-align: center;
+        border: 1px solid antiquewhite;
+        border-radius: 20px;
+    }
+    #mobile a {
+        color: rgb(60, 60, 60);
+    }
+    #mobile li{
+        padding: 1.5% 0;
+        font-weight: bolder;
+    }
+    #mobile li:last-child{
+        border-top: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+    }
+    ul:first-child :nth-child(2){
+        display: none;
+    }
+}
+
+
+@media (min-width:1024px){
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #mobile{
+        display: flex;
+        padding-left: 62%;
+        list-style: none;
+    }
+    .create-acc{
+        width: 100%;
+        
+        
+        margin-top: -10px;
+    }
+    .create-acc a{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 4% 6%;
+    }
+
+    .mobile{
+        display: none;
+    }
+    .hide-content{
+        display: block;
+    }
+    .review-btn a{
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: black;
+        padding: 1% 2%; margin-bottom: 5%;
+        float: right;
+    }
+    .camps-container{
+        display: grid;
+        grid-template-columns: 0.6fr 2fr;
+        gap: 5rem;
+        
+    }
+}

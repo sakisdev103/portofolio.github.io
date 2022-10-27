@@ -1,0 +1,204 @@
+body{
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar li{
+    margin: 0 2%;
+}
+
+.navbar ul:first-child{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul:first-child li:first-child{
+    margin-top: -5px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.search-container{
+    background-color: antiquewhite;
+    padding: 5% 2%;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.search-container h1{
+    font-size: 30px;
+    color: black;
+}
+
+.search-container p{
+    color: grey;
+}
+
+.search-container a{
+    color: grey;
+    display: flex;
+    margin-top: 2%;
+}
+
+.search-bar{
+    padding: 1%;
+    text-align: center;
+    outline:none!important;
+    background: url(../../Assets/Search\ Icon.svg) no-repeat scroll 8px 10px ;
+}
+
+.search-btn{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 1% 2%;
+}
+
+.mountains-container{
+    max-width: 84%;
+    margin: 2% auto;
+    gap: 30px;
+}
+
+.camp-item{
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.camp-item-img{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.camp-item-img img{
+    width: 100%;
+}
+
+.view-camp{
+    max-width: 80%;
+    margin: 3% auto;
+    text-align: center;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    padding: 2% 8%;
+}
+
+.camp-item a{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+}
+
+.camp-item p{
+    color: grey;
+}
+
+.footer{
+    padding: 2% 8%;
+    max-width: 80%;
+    
+}
+
+.mobile{
+    display: block;
+    float: right;
+    background-color: rgb(241, 241, 241);
+    padding: 0.5% 1%;
+    margin-right: 8%; margin-bottom: 20%;
+}
+
+.hide-content{
+    display: none;
+}
+
+.display-content{
+    display: block;
+}
+
+@media (max-width:1024px){
+    #mobile{
+        list-style: none;
+        max-width: 60%;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        padding: 2% 5%; margin-bottom: 5%;
+        text-align: center;
+        border: 1px solid antiquewhite;
+        border-radius: 20px;
+    }
+    #mobile a {
+        color: rgb(60, 60, 60);
+    }
+    #mobile li{
+        padding: 1.5% 0;
+        font-weight: bolder;
+    }
+    #mobile li:last-child{
+        border-top: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+    }
+    ul:first-child :nth-child(2){
+        display: none;
+    }
+}
+
+
+@media (min-width: 800px){
+    .mountains-container-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .camp-item-img img{
+        height: 15rem;
+    }
+}
+
+@media (min-width:1024px){
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #mobile{
+        display: flex;
+        padding-left: 62%;
+        list-style: none;
+    }
+    .create-acc{
+        width: 100%;
+        
+        
+        margin-top: -10px;
+    }
+    .create-acc a{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 4% 6%;
+    }
+
+    .camp-item p {
+        max-width: 80%;
+        letter-spacing: 1px;
+    }
+    .mountains-container-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .mobile{
+        display: none;
+    }
+    .hide-content{
+        display: block;
+    }
+}

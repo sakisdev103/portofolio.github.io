@@ -1,0 +1,123 @@
+body{
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 10%;
+}
+
+.navbar p{
+    margin-top: 5px;
+}
+
+.navbar p a{
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar p a:visited{
+    color: grey;
+}
+
+.main{
+    padding: 5% 10%;
+}
+
+.main h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    margin: 2% 0;
+    padding: 2% 0;
+    padding-left: 3%;
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px;
+    color: rgb(58, 58, 58);
+    
+}
+
+input:focus {outline:none!important;}
+
+.form label{
+    color: grey;
+}
+
+.form-submit{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 3% 0;
+}
+
+.main p{
+    color: grey;
+}
+
+.main p a{
+    color: rgb(0, 191, 255);
+    font-weight: bolder;
+}
+
+.side-review{
+    background-color: rgb(245, 245, 245);
+    max-height: 100vh;
+    
+}
+
+.testimonial{
+    display: flex;
+}
+
+.testimonial-info{
+    margin: 0 2%;
+}
+
+.testimonial-info p{
+    margin-top: -15px;
+    color: grey;
+}
+
+@media (min-width: 1024px){
+    .sign-in-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+    .side-review{
+        max-height: 100vh;
+        padding: 25% 20%;
+
+    }
+
+}
+
+@media (max-width: 1024px){
+    .main h2{
+        font-size: 37px;
+    }
+    .side-review{
+        padding: 5% 10%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px){
+    .side-review{
+        padding: 5% 10%;
+        font-size: 11px;
+    }
+}

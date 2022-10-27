@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/search-page.css">
+    <title>Search</title>
+</head>
+<body>
+    <a href="javascript:void(0);" class="mobile">
+        <img src="../Assets/Hamburger Menu.svg" alt="">
+    </a>
+    <nav class="navbar">
+        <ul>
+            <li><img src="../Assets/Logo.svg" alt=""></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <ul class="hide-content" id="mobile">
+            <li><a href="signIn.html">Login</a></li>
+            <li class="create-acc"><a href="signUp.html">Create an account</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <div class="search-container">
+            <h1>Welcome to YelpCamp!</h1>
+            <p>View our hard-picked campgrounds from all over the world, or add your own.</p>
+            <input type="search" class="search-bar" name="" id="" placeholder="Search for camps">
+            <input type="submit" class="search-btn" name="submit" value="Search">
+            
+            <a href="">Or add your own campground</a>
+        </div>
+        <div class="mountains-container mountains-container-grid" id="show-content">
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <img src="../Assets/Logo.svg" alt="">
+    </footer>
+    <script src="js/displayCamps.js"></script>
+</body>
+</html>

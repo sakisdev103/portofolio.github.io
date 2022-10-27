@@ -1,0 +1,47 @@
+.section{
+    background-color: #9932CC;
+}
+.title{
+    margin-top: 5%;
+    text-align: center;
+    padding: 1%;
+    color: white;
+}
+.container-add{
+    color: black;
+    margin: 1%;
+    padding: 2%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 8%;
+}
+.input-bar{
+    border-radius: 20px;
+    width: 30%;;
+    text-align: center;
+    font-size: large;
+
+}
+.button-for-submit{
+    background-color: purple;
+    color: white;
+    padding: 10px 20px 10px;
+    border-radius: 15px;
+}
+
+.container-preview{
+    color: black;
+    margin: 1%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 8%;    
+}
+.delete-button{
+    float: right;
+    background-color: white;
+    
+}
