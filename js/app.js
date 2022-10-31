@@ -144,12 +144,6 @@ const apps = [
         description: "some random text",
         link: "Javascript30_Navbar_Starter_Files_b5ba67c1ca/App/index.html",
         img: "images/App.png"
-    },
-    {
-        name: "Job Listing",
-        description: "some random text",
-        link: "Job-Listing/App/index.html",
-        img: "images/job-listing.png"
     }
 ]
 
@@ -189,4 +183,4 @@ revealProjects.addEventListener("click", function(){
     }else{
         revealProjects.innerHTML = `<i class="fa-solid fa-plus">`;
     }
-});
+})
