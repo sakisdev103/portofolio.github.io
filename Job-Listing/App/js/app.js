@@ -11,7 +11,7 @@ const jobs = [
         level: "Senior",
         languages: ["HTML", "CSS", "JavaScript"],
         tool: "",
-        img: "images/photosnap.svg"
+        img: "./images/photosnap.svg"
     },
     {
         company: "Manage",
@@ -25,7 +25,7 @@ const jobs = [
         level: "Midweight",
         languages: "Python",
         tool: "",
-        img: "../images/manage.svg"
+        img: "./images/manage.svg"
     },
     {
         company: "Account",
@@ -39,7 +39,7 @@ const jobs = [
         level: "Junior",
         languages: "JavaScript",
         tool: "React Sass",
-        img: "../images/account.svg"
+        img: "./images/account.svg"
     },
     {
         company: "MyHome",
@@ -53,7 +53,7 @@ const jobs = [
         level: "Junior",
         languages: "CSS Javascript",
         tool: "",
-        img: "../images/myhome.svg"
+        img: "./images/myhome.svg"
     },
     {
         company: "Loop Studios",
@@ -67,7 +67,7 @@ const jobs = [
         level: "Midweight",
         languages: "Javascript Ruby",
         tool: "Sass",
-        img: "../images/loop-studios.svg"
+        img: "./images/loop-studios.svg"
     },
     {
         company: "FaceIt",
@@ -81,7 +81,7 @@ const jobs = [
         level: "Junior",
         languages: "Ruby",
         tool: "RoR",
-        img: "../images/faceit.svg"
+        img: "./images/faceit.svg"
     },
     {
         company: "Shortly",
@@ -95,7 +95,7 @@ const jobs = [
         level: "Junior",
         languages: "HTML Javascript",
         tool: "Sass",
-        img: "../images/shortly.svg"
+        img: "./images/shortly.svg"
     },
     {
         company: "Insure",
@@ -109,7 +109,7 @@ const jobs = [
         level: "Junior",
         languages: "Javascript",
         tool: "Vue Sass",
-        img: "../images/insure.svg"
+        img: "./images/insure.svg"
     },
     {
         company: "Eyecam Co",
@@ -123,7 +123,7 @@ const jobs = [
         level: "Midweight",
         languages: "Javascript Python",
         tool: "Django",
-        img: "../images/etecam-co.svg"
+        img: "./images/etecam-co.svg"
     },
     {
         company: "The Air Filter Company",
@@ -137,7 +137,7 @@ const jobs = [
         level: "Junior",
         languages: "Javascript",
         tool: "React Sass",
-        img: "../images/the-air-filter-company.svg"
+        img: "./images/the-air-filter-company.svg"
     }
 ]
 
