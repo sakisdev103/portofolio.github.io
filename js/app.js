@@ -144,6 +144,12 @@ const apps = [
         description: "some random text",
         link: "Javascript30_Navbar_Starter_Files_b5ba67c1ca/App/index.html",
         img: "images/App.png"
+    },
+    {
+        name: "Job Listing",
+        description: "some random text",
+        link: "Job-Listing/App/index.html",
+        img: "images/job-listing.png"
     }
 ]
 
@@ -160,7 +166,7 @@ window.addEventListener("DOMContentLoaded", function () {
         <div class="project-card">
             <h5>${item.name}</h5>
             <img src="${item.img}" alt="">
-
+            <p>${item.description}</p>
             <a href="${item.link}">View Project</a>
         </div>
       `
