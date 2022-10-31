@@ -11,7 +11,7 @@ const jobs = [
         level: "Senior",
         languages: ["HTML", "CSS", "JavaScript"],
         tool: "",
-        img: "../images/photosnap.svg"
+        img: "images/photosnap.svg"
     },
     {
         company: "Manage",
