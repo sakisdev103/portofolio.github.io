@@ -189,4 +189,4 @@ revealProjects.addEventListener("click", function(){
     }else{
         revealProjects.innerHTML = `<i class="fa-solid fa-plus">`;
     }
-})
+});
