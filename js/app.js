@@ -150,7 +150,13 @@ const apps = [
         description: "some random text",
         link: "Job-Listing/App/index.html",
         img: "images/job-listing.png"
-    }
+    },
+    {
+        name: "Car Rental",
+        description: "some random text",
+        link: "#",
+        img: "images/car-rental.png"
+    }    
 ]
 
 // display all items when page loads
